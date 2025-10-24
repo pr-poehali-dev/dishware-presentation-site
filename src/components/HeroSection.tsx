@@ -39,7 +39,7 @@ const HeroSection = ({ onNavigate }: HeroSectionProps) => {
               className="absolute bottom-20 left-0 w-56 floating-animation floating-delay-1"
             />
             <img
-              src="https://cdn.poehali.dev/projects/095d043c-0c0d-400c-8fac-576437a2313f/files/91b1538b-c60b-411c-9dbb-c544b50d3e78.jpg"
+              src="https://cdn.poehali.dev/files/2b7c3e51-9555-4085-8551-40ef2d2dcaa2.png"
               alt="Гриль"
               className="absolute bottom-0 right-20 w-48 floating-animation floating-delay-2"
             />
