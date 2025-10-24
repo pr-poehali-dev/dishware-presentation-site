@@ -29,7 +29,7 @@ const HeroSection = ({ onNavigate }: HeroSectionProps) => {
           </div>
           <div className="relative h-[500px]">
             <img
-              src="https://cdn.poehali.dev/projects/095d043c-0c0d-400c-8fac-576437a2313f/files/92061c04-9b8d-467a-a759-7de4251acc1a.jpg"
+              src="https://cdn.poehali.dev/files/3735c900-3f51-45a3-bb30-7c1253f62896.png"
               alt="Сковорода"
               className="absolute top-0 right-0 w-64 floating-animation"
             />
