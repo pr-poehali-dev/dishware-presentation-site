@@ -34,7 +34,7 @@ const HeroSection = ({ onNavigate }: HeroSectionProps) => {
               className="absolute top-0 right-0 w-64 floating-animation"
             />
             <img
-              src="https://cdn.poehali.dev/projects/095d043c-0c0d-400c-8fac-576437a2313f/files/2f274700-b811-41f6-9a13-eb2c2bd94d4b.jpg"
+              src="https://cdn.poehali.dev/files/bf90b294-a655-462a-9e61-fd3b4c8af459.png"
               alt="Кастрюля"
               className="absolute bottom-20 left-0 w-56 floating-animation floating-delay-1"
             />
