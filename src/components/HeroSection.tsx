@@ -31,17 +31,17 @@ const HeroSection = ({ onNavigate }: HeroSectionProps) => {
             <img
               src="https://cdn.poehali.dev/files/3735c900-3f51-45a3-bb30-7c1253f62896.png"
               alt="Сковорода"
-              className="absolute top-0 right-0 w-64 floating-animation"
+              className="absolute top-10 right-10 w-56 floating-animation z-30"
             />
             <img
               src="https://cdn.poehali.dev/files/bf90b294-a655-462a-9e61-fd3b4c8af459.png"
               alt="Кастрюля"
-              className="absolute bottom-20 left-0 w-56 floating-animation floating-delay-1"
+              className="absolute top-1/2 left-5 -translate-y-1/2 w-48 floating-animation floating-delay-1 z-20"
             />
             <img
               src="https://cdn.poehali.dev/files/2b7c3e51-9555-4085-8551-40ef2d2dcaa2.png"
               alt="Гриль"
-              className="absolute bottom-10 right-10 w-48 floating-animation floating-delay-2"
+              className="absolute bottom-16 right-1/4 w-52 floating-animation floating-delay-2 z-10"
             />
           </div>
         </div>
