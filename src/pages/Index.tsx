@@ -11,9 +11,11 @@ import {
 
 const Index = () => {
   const [activeSection, setActiveSection] = useState('home');
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const scrollToSection = (sectionId: string) => {
     setActiveSection(sectionId);
+    setIsMobileMenuOpen(false);
     document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' });
   };
 
@@ -85,8 +87,56 @@ const Index = () => {
               <Icon name="Phone" size={16} className="mr-2" />
               8 (900) 747-03-03
             </Button>
+            <button
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              className="md:hidden p-2 hover:bg-gray-100 rounded-lg transition-colors"
+            >
+              <Icon name={isMobileMenuOpen ? "X" : "Menu"} size={24} />
+            </button>
           </div>
         </div>
+        {isMobileMenuOpen && (
+          <div className="md:hidden bg-white border-t shadow-lg">
+            <div className="container mx-auto px-4 py-4 space-y-2">
+              <button
+                onClick={() => scrollToSection('home')}
+                className={`block w-full text-left py-3 px-4 rounded-lg hover:bg-gray-100 transition-colors ${activeSection === 'home' ? 'bg-primary/10 text-primary font-semibold' : ''}`}
+              >
+                Главная
+              </button>
+              <button
+                onClick={() => scrollToSection('about')}
+                className={`block w-full text-left py-3 px-4 rounded-lg hover:bg-gray-100 transition-colors ${activeSection === 'about' ? 'bg-primary/10 text-primary font-semibold' : ''}`}
+              >
+                О компании
+              </button>
+              <button
+                onClick={() => scrollToSection('products')}
+                className={`block w-full text-left py-3 px-4 rounded-lg hover:bg-gray-100 transition-colors ${activeSection === 'products' ? 'bg-primary/10 text-primary font-semibold' : ''}`}
+              >
+                Продукция
+              </button>
+              <button
+                onClick={() => scrollToSection('care')}
+                className={`block w-full text-left py-3 px-4 rounded-lg hover:bg-gray-100 transition-colors ${activeSection === 'care' ? 'bg-primary/10 text-primary font-semibold' : ''}`}
+              >
+                Инструкции
+              </button>
+              <button
+                onClick={() => scrollToSection('contacts')}
+                className={`block w-full text-left py-3 px-4 rounded-lg hover:bg-gray-100 transition-colors ${activeSection === 'contacts' ? 'bg-primary/10 text-primary font-semibold' : ''}`}
+              >
+                Контакты
+              </button>
+              <a href="tel:89007470303" className="block">
+                <Button className="w-full mt-2">
+                  <Icon name="Phone" size={16} className="mr-2" />
+                  8 (900) 747-03-03
+                </Button>
+              </a>
+            </div>
+          </div>
+        )}
       </nav>
 
       <section id="home" className="pt-24 pb-12 bg-gradient-to-b from-red-50 to-white relative overflow-hidden">
