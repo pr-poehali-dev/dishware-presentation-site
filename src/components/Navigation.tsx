@@ -19,11 +19,12 @@ const Navigation = ({ activeSection, onNavigate }: NavigationProps) => {
     <nav className="fixed top-0 w-full bg-white shadow-sm z-50">
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
-          <div className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
-              <Icon name="ChefHat" className="text-white" size={24} />
-            </div>
-            <span className="text-2xl font-bold font-heading">TRIVARI</span>
+          <div className="flex items-center">
+            <img 
+              src="https://cdn.poehali.dev/files/014f61fc-4db6-4b2b-bee9-1f11627df55c.png" 
+              alt="TRIVARI" 
+              className="h-12"
+            />
           </div>
           <div className="hidden md:flex space-x-8">
             <button

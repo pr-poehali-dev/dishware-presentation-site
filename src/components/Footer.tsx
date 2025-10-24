@@ -10,11 +10,12 @@ const Footer = ({ onNavigate }: FooterProps) => {
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-4 gap-8">
           <div>
-            <div className="flex items-center space-x-2 mb-4">
-              <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
-                <Icon name="ChefHat" className="text-white" size={24} />
-              </div>
-              <span className="text-2xl font-bold font-heading">TRIVARI</span>
+            <div className="mb-4">
+              <img 
+                src="https://cdn.poehali.dev/files/014f61fc-4db6-4b2b-bee9-1f11627df55c.png" 
+                alt="TRIVARI" 
+                className="h-12"
+              />
             </div>
             <p className="text-white/80 text-sm">
               Антипригарная посуда премиум качества для вашей кухни
